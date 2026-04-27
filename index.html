@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EconTech Lab | 個人網站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">EconTech Lab</a>
+            <ul class="nav-links">
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+            <div class="container">
+                <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <div style="flex:1; min-width: 250px;">
+                        <p class="hero-greeting">你好，我是</p>
+                        <h1 class="hero-title">古承恩 <span>/ Brian Ku</span></h1>
+                        <p class="hero-tagline">穿梭於經濟模型與程式碼之間：專注於支付系統優化與財政政策分析的研究型開發者。</p>
+                        <div class="btn-group">
+                            <a href="#about" class="btn btn-primary">View Work</a>
+                            <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <img id="heroPreview" src="cover.png" alt="封面圖片預覽" style="max-width:100%; max-height:160px; display:block; border-radius:8px; border:1px solid #FFB300;"/>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section id="about" class="about">
+                <section id="courses" class="about">
+                    <div class="container">
+                        <h2 class="section-title">Courses</h2>
+                        <div class="about-text">
+                            <ul style="list-style: disc inside;">
+                                <li>經濟學原理</li>
+                                <li>財政學</li>
+                                <li>統計學</li>
+                                <li>計量經濟學</li>
+                                <li>程式設計導論</li>
+                                <li>資料結構</li>
+                                <li>資料庫系統</li>
+                                <li>人工智慧導論</li>
+                                <li>金融科技專題</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills" class="about">
+                    <div class="container">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="about-text">
+                            <ul style="list-style: disc inside;">
+                                <li>Python / R / SQL</li>
+                                <li>HTML / CSS / JavaScript</li>
+                                <li>Git / GitHub</li>
+                                <li>資料分析與視覺化</li>
+                                <li>機器學習基礎</li>
+                                <li>財經數據處理</li>
+                                <li>專案管理</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" class="about">
+                    <div class="container">
+                        <h2 class="section-title">Projects</h2>
+                        <div class="about-text">
+                            <ul style="list-style: disc inside;">
+                                <li>優速Pay：稅務計算自動化工具</li>
+                                <li>NBA 數據分析 Dashboard</li>
+                                <li>財政政策模擬平台</li>
+                                <li>學術論文資料爬蟲</li>
+                                <li>個人網站設計與開發</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            <div class="container">
+                <h2 class="section-title">關於我</h2>
+                <div class="about-text">
+                    <p>目前就讀於國立台北大學，專攻經濟與財政領域。我熱衷於將複雜的財政法規，轉化為易於理解的數位邏輯，並開發如「優速pay」等實用工具。</p>
+                    <p>在學術研究之外，我曾擔任財政系系學會成員，目前也在CYSS平台擔任員工，也曾完成機車環島挑戰，這些經歷塑造了我面對挑戰時的毅力與分析力。</p>
+                </div>
+                <div style="margin-top:2.5rem;">
+                    <form id="uploadForm" enctype="multipart/form-data" style="background:#e3f2fd; border:2px dashed #1976D2; border-radius:12px; padding:1.5rem; max-width:400px;">
+                        <label for="imageUpload" style="font-weight:600; color:#1976D2;">上傳你的圖片：</label><br>
+                        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" style="margin:1rem 0;">
+                        <br>
+                        <img id="preview" src="" alt="預覽" style="max-width:100%; max-height:200px; display:none; border-radius:8px; border:1px solid #1976D2;"/>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">聯絡我</h2>
+            <p class="contact-desc">如果你對 FinTech、稅法研究或專案合作感興趣，歡迎透過以下方式聯繫：</p>
+            
+            <div class="social-links">
+                <a href="mailto:your.email@example.com" class="social-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/your-username" target="_blank" class="social-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 EconTech Lab. Built with Passion in Hsinchu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
